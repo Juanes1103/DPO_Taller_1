@@ -1,5 +1,7 @@
 package uniandes.dpoo.taller0.consola;
 
+//Dirección archivo: C:\Users\juane\git\DPO_Taller_1\Taller0_Olimpicos\data\atletas.csv
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -408,16 +410,16 @@ public class ConsolaOlimpicos
 	
 	private void ejecutarPaisAtleta() 
 	{
-		System.out.println("\n Pais de un atleta");
+		System.out.println("\nPais de un atleta\n");
 		
-		String nombre = input("Ingrese el nombre del atleta: ");
+		String nombre = input("Ingrese el nombre del atleta");
 		
 		String pais = calculadora.paisAtleta(nombre);
 		
 		if (pais == ""){
-			System.out.println("No se ha encontrado información de " + nombre);
+			System.out.println("\nNo se ha encontrado información de " + nombre);
 		} else {
-			System.out.println(nombre + " representa al país:"  + pais);
+			System.out.println("\n" + nombre + " es el representante de: "  + pais);
 		}
 	}
 
